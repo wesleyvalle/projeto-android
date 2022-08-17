@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* 
+    #c5ebd6 - cor de fundo
+    #83e1ad
+    #3ddc84
+    #2fa866
+    #1a5c37
+    #063d1e
+
+                
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=Oswald:wght@300&family=Roboto:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+    @font-face {
+        font-family: 'Android';
+        src:url('../fontes/idroid.otf') format('opentype');
+        font-weight: normal;
+
+
+    }
+    * {
+        padding: 0px;
+        margin: 0px;
+        text-align: justify;
+    }
+:root {
+    --cor01: #c5ebd6; 
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'Recursive';
+    --font-android: 'android', 'Recursive';
+
+}
+body {
+    background-color: var(--cor01);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor06));
+    min-height: 150px;
+    
+}
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
+}
+header > p {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
+} 
+nav {
+    background-color: var(--cor06);
+    padding: 10px;
+    box-shadow: 0px 7px 9px black;
+    
+    }
+nav > a {
+    padding: 10px;  
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav >a:hover {
+    background-color: var(--cor04);
+    color: var(--cor05);
+    border-radius: 3px;
+}
+main {
+    margin: auto;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+main h1 {
+    font-family: var(--font-android);
+    color: var(--cor05);
+    font-weight: normal;
+    }
+main > article > h2 {
+    font-family: var(--font-android);
+    color: var(--cor04);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor01), transparent)
+}
+main > artile > picture > img {
+    text-align: center;
+    margin: auto;
+}
+div.video {
+    background-color: var(--cor06);
+    margin: 1px -20px 30px -20px;
+    padding: 10px;
+    padding-bottom: 58.5%;
+    height: 40px;
+    position: relative;
+    
+
+}
+div.video > iframe {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+h2 {
+    
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: medium;
+}
+main > img {
+    width: 100%;
+}
+img.pequena {
+    max-width: 350px;
+    margin:auto;
+    display: block;
+}
+img.irinapq {
+    margin:auto;
+    display: block ;
+}
+main strong {
+    color: var(--cor05);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    padding: 2px 6px;
+    background-color: var(--cor01);
+}
+main a:hover {
+    text-decoration: underline;
+    background-color: var(--cor03);
+}
+aside {
+    background-color: var(--cor04);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside > h3 {
+    background-color: var(--cor05);
+    color: rgba(0, 0, 0, 0.479);
+    margin: -10px -10px 0px -10px;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    }
+aside > p {
+    text-indent: 30px;
+    text-height: 0.8em;
+}
+
+footer {
+    background-color: var(--cor06);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+footer p {
+    text-align: center;
+}
+footer a {
+    color: white;
+}
+footer > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+    background-color: var(--cor04);
+}
